@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.primary-button{
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	background: #007AFF;
+	padding: 5px 30px;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.secondary-button{
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	/* background: #007AFF; */
+	padding: 5px 30px;
+	color: #333;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
