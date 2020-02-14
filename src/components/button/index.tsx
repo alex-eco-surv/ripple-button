@@ -9,9 +9,10 @@ interface NewRippleArray {
 
 interface Props {
 	buttonType: string;
+	text: string;
 }
 
-const Index: React.FC<Props> = ({ buttonType }) => {
+const Index: React.FC<Props> = ({ buttonType, text }) => {
 	const [rippleArray, setRippleArray] = useState<Array<NewRippleArray>>([]);
 
 	const addRipple = (event?: any) => {
@@ -33,22 +34,25 @@ const Index: React.FC<Props> = ({ buttonType }) => {
 	};
 
 	return (
-		<div className="div-container" onMouseDown={addRipple}>
-			{
-				rippleArray.map((ripple, index) => {
-					return (
-						<span className={buttonType}
-						key={"span" + index}
-						style={{
-							top: ripple.y,
-							left: ripple.x,
-							width: ripple.size,
-							height: ripple.size
-						}}
-						/>
-					);
-			})}
-		</div>
+		<button className={`${buttonType}-button`}>
+			{text}
+			<div className="div-container" onMouseDown={addRipple}>
+				{
+					rippleArray.map((ripple, index) => {
+						return (
+							<span className={`${buttonType}-ripple`}
+							key={"span" + index}
+							style={{
+								top: ripple.y,
+								left: ripple.x,
+								width: ripple.size,
+								height: ripple.size
+							}}
+							/>
+						);
+				})}
+			</div>
+		</button>
 	)
 }
 

@@ -6,7 +6,7 @@
 	left: 0;
 }
 
-.primary{
+.primary-ripple{
 	transform: scale(0);
     border-radius: 100%;
     position: absolute;
@@ -17,7 +17,7 @@
 	user-select: none;
 }
 
-.secondary{
+.secondary-ripple{
 	transform: scale(0);
     border-radius: 100%;
     position: absolute;
@@ -27,6 +27,35 @@
 	animation-duration: 850ms;
 	user-select: none;
 }
+
+.primary-button{
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	background: #007AFF;
+	padding: 5px 30px;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.secondary-button{
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	/* background: #007AFF; */
+	padding: 5px 30px;
+	color: #333;
+	font-size: 20px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
 
 @keyframes ripple {
     to {

@@ -5,15 +5,9 @@ import Button from './components/button'
 const App: React.FC = () => {
 	return (
 		<div className="App">
-			<button className="primary-button">
-				Primary
-				<Button buttonType="primary" />
-			</button>
+			<Button buttonType="primary" text="primary" />
 			<br />
-			<button className="secondary-button">
-				secondary
-				<Button buttonType="secondary" />
-			</button>
+			<Button buttonType="secondary" text="secondary" />
 		</div>
 	);
 }
