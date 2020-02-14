@@ -29,7 +29,6 @@ const Index: React.FC<Props> = ({ buttonType, text }) => {
 			size
 		};
 
-		
 		setRippleArray([...rippleArray, newRippleArray]);
 	};
 
