@@ -7,7 +7,11 @@ const App: React.FC = () => {
 		<div className="App">
 			<Button buttonType="primary" text="primary" />
 			<br />
+			<br />
 			<Button buttonType="secondary" text="secondary" />
+			<br />
+			<br />
+			<Button text="default" />
 		</div>
 	);
 }

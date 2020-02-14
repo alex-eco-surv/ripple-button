@@ -8,7 +8,7 @@ interface NewRippleArray {
 }
 
 interface Props {
-	buttonType: string;
+	buttonType?: string;
 	text: string;
 }
 
@@ -53,6 +53,10 @@ const Index: React.FC<Props> = ({ buttonType, text }) => {
 			</div>
 		</button>
 	)
+}
+
+Index.defaultProps = {
+	buttonType: 'secondary'
 }
 
 export default Index
